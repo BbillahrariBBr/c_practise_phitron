@@ -1,7 +1,7 @@
 #include<stdio.h>
 int main(){
-    int n,a, b;
-    scanf("%d %d %d",&n,&a,&b);
-    printf("%d", (n*2)*(a*b));
+    int n,c, d;
+    scanf("%d %d %d",&n,&c,&d);
+    printf("%d", (n*2)*(c*d));
     return 0;
 }
