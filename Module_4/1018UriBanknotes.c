@@ -10,6 +10,7 @@ int main()
     int fi = ((((n%100)%50)%20)%10)/5;
     int two = (((((n%100)%50)%20)%10)%5)/2;
     int o = (((((n%100)%50)%20)%10)%5)%2;
+    printf("%d\n",n);
     printf("%d nota(s) de R$ 100,00\n",h);
     printf("%d nota(s) de R$ 50,00\n",f);
     printf("%d nota(s) de R$ 20,00\n",tw);
