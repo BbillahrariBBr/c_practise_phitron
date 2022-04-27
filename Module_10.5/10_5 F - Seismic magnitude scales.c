@@ -5,8 +5,7 @@ int main()
     int a,b;
     int res;
     scanf("%d %d", &a, &b);
-    if(b<=3 && a<=b && a<=9)
-    {
+
         if(a>b)
         {
             int sub = a-b;
@@ -19,5 +18,4 @@ int main()
             printf("1\n");
         }
 
-    }
 }
