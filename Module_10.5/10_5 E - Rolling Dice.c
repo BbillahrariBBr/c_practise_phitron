@@ -4,7 +4,7 @@ int main()
     int a,b;
     scanf("%d %d",&a,&b);
     int total = a*6;
-    if(b <= total )
+    if(b>= a && b <= total )
     {
         printf("Yes");
     }
