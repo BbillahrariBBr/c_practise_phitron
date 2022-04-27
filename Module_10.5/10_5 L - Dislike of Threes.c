@@ -1,18 +1,21 @@
-#include<stdio.h>
+#include <stdio.h>
+
 int main()
 {
-
-    int t;
-    scanf("%d",&t);
-    for(int i =1; i<=t; i++)
-    {
-        int inp;
-        scanf("%d",&inp);
-        if(inp%3!=0&&inp%10!=3){
-            printf("%d\n",inp);
-        }
-
-
-    }
-    return 0;
+	int t;
+	scanf("%d", &t);
+	while (t--)
+	{
+		int k, j = 0, i = 0;
+		scanf("%d", &k);
+		for (i = 1; j<k; i++)
+		{
+			if (i % 3 != 0 && i % 10 != 3)
+			{
+				j++;
+			}
+		}
+		printf("%d\n", i - 1);
+	}
+	return 0;
 }
