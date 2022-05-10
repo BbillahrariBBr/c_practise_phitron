@@ -7,12 +7,14 @@ int main()
     {
         scanf("%d",arr+i);
     }
+    // this one is mine
 //    for(i=size-1,j=0;i>=0;i--,j++)
 //    {
 //        rev[j] = arr[i];
 //        printf("%d\t",rev[j]);
 //    }
 
+// this is kundu minimum solve
     for(i=size-1,j=0;j<i;i--,j++)
     {
         int temp = arr[j];
@@ -20,6 +22,7 @@ int main()
         arr[i] =temp;
 
     }
+    //kundu another
 //    for(i=0;i<size;i++)
 //    {
 //        rev[size-1-i] = arr[i];
