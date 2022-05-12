@@ -1,6 +1,5 @@
 #include<stdio.h>
-#include<stdlib.h>
-//abs();
+
 int main()
 {
     int n,inc=0;
