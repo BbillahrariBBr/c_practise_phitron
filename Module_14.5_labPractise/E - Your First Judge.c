@@ -5,6 +5,7 @@ int main()
     char s[16];
     char t[] ="Hello,World!";
     scanf("%s",s);
+    //str compare
     int temp = strcmp(s,t);
     if(temp==0)
     {
