@@ -8,6 +8,7 @@ int main()
     {
         scanf("%s",str);
         int len = strlen(str);
+        //for two char
         if(len==2)
         {
             printf("%s\n",str);
