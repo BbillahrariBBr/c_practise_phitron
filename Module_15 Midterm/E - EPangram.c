@@ -14,6 +14,7 @@ int main()
 
     for(int i=0; i<n; i++)
     {
+        // letter count
         if(name[i] >= 'A' && name[i] <= 'Z' )
         {
             count[name[i]-'A'] = 1;
@@ -26,7 +27,7 @@ int main()
     }
 
 
-
+//check
     for(int i =0; i<26; i++)
     {
         if(count[i]==0)
