@@ -3,7 +3,7 @@
 int main()
 {
     char a[10];
-    gets(a);
-    puts(a);
+    fgets(a,10,stdin);
+    printf("%s",a);
     return 0;
 }
