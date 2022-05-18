@@ -1,12 +1,12 @@
 #include<stdio.h>
 void rotateArray(int n, int arr[])
 {
-    for(int i=0; i<n;i++)
+    int temp = arr[0];
+    for(int i=0; i<n-1;i++)
     {
-        int temp = arr[i];
-        printf("%d ",arr[((i+1)%n)]);
-
+        arr[i] = arr[i+1];
     }
+    arr[n-1] = temp;
 }
 int main()
 {
@@ -18,6 +18,11 @@ int main()
         scanf("%d",arr+i);
     }
     rotateArray(n,arr);
+    for(int i=0;i<n;i++)
+    {
+        printf("%d",arr[i]);
+    }
 
     return 0;
 }
+
