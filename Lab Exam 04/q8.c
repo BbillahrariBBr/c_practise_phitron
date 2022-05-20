@@ -3,20 +3,19 @@
 //stringCat(char a[], char b[], char out[])
 void stringCat(char a[], char b[], char out[])
 {
-    out = strcat(a,b);
-//    int i = 0, j = 0;
-//    while (a[i] != '\0') {
-//        out[j] = a[i];
-//        i++;
-//        j++;
-//    }
-//    i = 0;
-//    while (b[i] != '\0') {
-//        out[j] = b[i];
-//        i++;
-//        j++;
-//    }
-//    out[j] = '\0';
+    int i = 0, j = 0;
+    while (a[i] != '\0') {
+        out[j] = a[i];
+        i++;
+        j++;
+    }
+    i = 0;
+    while (b[i] != '\0') {
+        out[j] = b[i];
+        i++;
+        j++;
+    }
+    out[j] = '\0';
 //    puts(out);
 }
 int main()
