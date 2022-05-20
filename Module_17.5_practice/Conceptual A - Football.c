@@ -16,7 +16,13 @@ int main()
     {
         for(int i=0; i<len-6;i++)
         {
-            if(player[i]==player[i+1]==player[i+2]==player[i+3]==player[i+4]==player[i+5]==player[i+6])
+            if(player[i]== '1'  && player[i+1]== '1'  && player[i+2]== '1'  && player[i+3]== '1'  && player[i+4]== '1'  && player[i+5]== '1'  && player[i+6] == '1')
+            {
+                printf("YES\n");
+                return 0;
+            }
+
+            if(player[i]== '0'  && player[i+1]== '0'  && player[i+2]== '0'  && player[i+3]== '0'  && player[i+4]== '0'  && player[i+5]== '0'  && player[i+6] == '0')
             {
                 printf("YES\n");
                 return 0;
