@@ -10,6 +10,8 @@ int main()
 {
     int a, b, pa, pb;
     scanf("%d %d",&a,&b);
+
+    //return a and b's value in pa and pb addrees
     retTwoNumber(a,b,&pa,&pb);
     printf("pa=b-> is %d and pb=a->%d",pa,pb);
 
