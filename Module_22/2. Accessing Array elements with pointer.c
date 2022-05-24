@@ -6,7 +6,7 @@ int main()
     int a[n];
      for(int i=0; i<n;i++)
     {
-        scanf("%d",&*(a+i));
+        scanf("%d",a+i);
     }
     int prod =1;
     for(int i=0; i<n;i++)
