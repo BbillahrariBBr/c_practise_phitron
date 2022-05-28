@@ -3,7 +3,7 @@
 
 int main()
 {
-//    char str[] = "Hello";
+
     char text[100];
     scanf("%s",text);
     char *pchr = strchr(text,'a');
