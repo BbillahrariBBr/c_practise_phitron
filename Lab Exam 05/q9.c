@@ -10,26 +10,32 @@ int main()
 {
     char str[] = "Hello";
     char *pos = strChr(str,'l');
-//    if(!pos)
-//    {
-//        printf("Not found");
-//    }
-//    else{
-//        printf("found at %d", pos-str);
-//    }
-//    char *pos = strChr(str,'l');
-    printf("%s",pos);
+    if(!pos)
+    {
+        printf("Not found");
+    }
+    else{
+        printf("found at %d", pos-str);
+    }
+
+//    printf("%s",pos);
 
     return 0;
 }
 
 
+
+//char *strchra(char *str, int ch)
+//{
+//do      {
+//        if (*str == ch) return str;
+//        } while (*str++) ;
+//return NULL;
+//}
+//
 //int main()
 //{
 //    char str[] = "Hello";
-//    char *pos = strChr(str,'l');
-//
-//    }
 //    char *pos = strChr(str,'l');
 //    printf("%s",pos);
 //
@@ -37,10 +43,4 @@ int main()
 //}
 
 
-//char *strchr42a(char *str, int ch)
-//{
-//do      {
-//        if (*str == ch) return str;
-//        } while (*str++) ;
-//return NULL;
-//}
+
