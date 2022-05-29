@@ -11,24 +11,35 @@ int main()
 {
     //Declaration
     struct Date today;
+    int days;
+    printf("Enter Date: ");
     scanf("%d %d %d", &today.day, &today.month, &today.year);
 
+    printf("Enter days: ");
+    scanf("%d", &days);
+
     struct Date nextDay = today;
-    if(nextDay.day != daysInMonths[nextDay.month-1])
+    for(int i=0; i<days;i++)
     {
-        nextDay.day++;
+        if(nextDay.day != daysInMonths[nextDay.month-1])
+        {
+            nextDay.day++;
+        }
+        else if(nextDay.month != 12){
+            nextDay.day =1;
+            nextDay.month++;
+        }
+        else
+        {
+            nextDay.day =1;
+            nextDay.month =1;
+            nextDay.year++;
+        }
+        printf("%d-%d-%d\n",nextDay.day,nextDay.month,nextDay.year);
+
     }
-    else if(nextDay.month != 12){
-        nextDay.day =1;
-        nextDay.month++;
-    }
-    else
-    {
-        nextDay.day =1;
-        nextDay.month =1;
-        nextDay.year++;
-    }
-    printf("%d-%d-%d\n",nextDay.day,nextDay.month,nextDay.year);
+
+
 
     return 0;
 }
