@@ -13,7 +13,7 @@ void tobinary(unsigned int val,char str[])
 
     }
     str[idx] = '\0';
-
+// output reverse hw  reverse print
 }
 int main()
 {
