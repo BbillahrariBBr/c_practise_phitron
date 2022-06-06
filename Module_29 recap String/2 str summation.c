@@ -7,6 +7,6 @@ int main()
     strrev(a);
     strrev(b);
     printf("%s %s", a,b);
-
+// not complete
     return 0;
 }
