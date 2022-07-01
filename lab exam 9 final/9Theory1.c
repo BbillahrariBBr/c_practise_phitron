@@ -29,7 +29,7 @@ int main()
         sum +=stu[i].marks;
     }
 
-    printf("\n%d\n",sum);
+    printf("\n total marks: %d\n",sum);
 
     return 0;
 }
