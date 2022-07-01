@@ -2,11 +2,11 @@
 #include<string.h>
 int main()
 {
-    int n, comp=0;
-    scanf("%d",&n);
-    getchar();
+    int n,comp=0;
+    scanf("%d ",&n);
+//    getchar();
 
-    char name[n][21];
+    char name[n][25];
     for(int i = 0; i<n; i++)
     {
         gets(name[i]);
