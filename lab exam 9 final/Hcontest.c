@@ -2,28 +2,46 @@
 #include<string.h>
 int main()
 {
-    char st[1000];
+
+    char st[101];
     scanf("%s",st);
-    int counter[4] ={0};
     int len = strlen(st);
+
+    int m=0,n=0,o=0;
     for(int i =0; i<len; i++)
     {
-
-        char c = st[i];
-        if(c >= '1' && c <= '3')
-        {
-            int digit = c-'0';
-            counter[digit]++;
-        }
+        if(st[i]=='1')m++;
+        if(st[i]=='2')n++;
+        if(st[i]=='3')o++;
 
     }
     if(len ==1)
         printf("%s",st);
     else{
-       for(int i =1; i<=3; i++)
-        {
-            printf("%d ", counter[i]);
-        }
+            for(int i = 0; m||n||o; i = i+2)
+            {
+                if(m!=0)
+                {
+                    st[i]= '1';
+                    --m;
+                }
+                else if(m==0 && n!=0)
+                {
+                    st[i]= '2';
+                    --n;
+                }
+                else if(m==0 && n==0 && o!=0)
+                {
+                    st[i]= '3';
+                    --o;
+                }
+                if(st[i+1]!='\0')
+                {
+                   st[i+1] = '+';
+                }
+
+            }
+            printf("%s",st);
     }
 
 
