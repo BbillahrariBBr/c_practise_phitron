@@ -2,7 +2,7 @@
 #include<string.h>
 int main()
 {
-    char st[1000];
+    char st[1001];
     scanf("%s",st);
     int counter[10] ={0};
 
